@@ -1,0 +1,1780 @@
+{
+  "local_qwen3_base_es": {
+    "cluster1": {
+      "human": {
+        "n": 67,
+        "yes_rate": {
+          "mean": 0.2677,
+          "std": 0.0628,
+          "ci95": [
+            0.1518,
+            0.3807
+          ]
+        },
+        "agreement_rate": {
+          "mean": 0.7829,
+          "std": 0.1129,
+          "ci95": [
+            0.5391,
+            0.9441
+          ]
+        },
+        "label_entropy": {
+          "mean": 0.8229,
+          "std": 0.1052,
+          "ci95": [
+            0.6138,
+            0.9577
+          ]
+        }
+      },
+      "agent": {
+        "yes_rate": {
+          "value": 0.4613,
+          "boot_ci95": [
+            0.404,
+            0.5185
+          ]
+        },
+        "agreement_rate": {
+          "value": 0.73,
+          "boot_ci95": [
+            0.6754,
+            0.7865
+          ]
+        },
+        "label_entropy": {
+          "value": 0.9957,
+          "boot_ci95": [
+            0.9733,
+            1.0
+          ]
+        }
+      },
+      "position": {
+        "yes_rate": {
+          "z": 3.082,
+          "percentile": 1.0
+        },
+        "agreement_rate": {
+          "z": -0.468,
+          "percentile": 0.299
+        },
+        "label_entropy": {
+          "z": 1.642,
+          "percentile": 1.0
+        }
+      },
+      "pseudo_annotators": {
+        "k": 20,
+        "yes_rate": {
+          "wasserstein": 0.1909,
+          "ks_stat": 1.0,
+          "ks_p": 0.0
+        },
+        "agreement_rate": {
+          "wasserstein": 0.0963,
+          "ks_stat": 0.6418,
+          "ks_p": 0.0
+        },
+        "label_entropy": {
+          "wasserstein": 0.1719,
+          "ks_stat": 1.0,
+          "ks_p": 0.0
+        }
+      }
+    },
+    "cluster2": {
+      "human": {
+        "n": 234,
+        "yes_rate": {
+          "mean": 0.4723,
+          "std": 0.0786,
+          "ci95": [
+            0.3333,
+            0.614
+          ]
+        },
+        "agreement_rate": {
+          "mean": 0.867,
+          "std": 0.0611,
+          "ci95": [
+            0.7313,
+            0.9792
+          ]
+        },
+        "label_entropy": {
+          "mean": 0.9798,
+          "std": 0.0211,
+          "ci95": [
+            0.9183,
+            0.9998
+          ]
+        }
+      },
+      "agent": {
+        "yes_rate": {
+          "value": 0.4613,
+          "boot_ci95": [
+            0.404,
+            0.5185
+          ]
+        },
+        "agreement_rate": {
+          "value": 0.73,
+          "boot_ci95": [
+            0.6754,
+            0.7865
+          ]
+        },
+        "label_entropy": {
+          "value": 0.9957,
+          "boot_ci95": [
+            0.9733,
+            1.0
+          ]
+        }
+      },
+      "position": {
+        "yes_rate": {
+          "z": -0.14,
+          "percentile": 0.47
+        },
+        "agreement_rate": {
+          "z": -2.24,
+          "percentile": 0.026
+        },
+        "label_entropy": {
+          "z": 0.749,
+          "percentile": 0.752
+        }
+      },
+      "pseudo_annotators": {
+        "k": 20,
+        "yes_rate": {
+          "wasserstein": 0.0611,
+          "ks_stat": 0.5299,
+          "ks_p": 0.0
+        },
+        "agreement_rate": {
+          "wasserstein": 0.1256,
+          "ks_stat": 0.9444,
+          "ks_p": 0.0
+        },
+        "label_entropy": {
+          "wasserstein": 0.016,
+          "ks_stat": 0.6325,
+          "ks_p": 0.0
+        }
+      }
+    },
+    "cluster3": {
+      "human": {
+        "n": 89,
+        "yes_rate": {
+          "mean": 0.6763,
+          "std": 0.0634,
+          "ci95": [
+            0.5965,
+            0.8246
+          ]
+        },
+        "agreement_rate": {
+          "mean": 0.8363,
+          "std": 0.0911,
+          "ci95": [
+            0.6558,
+            0.9497
+          ]
+        },
+        "label_entropy": {
+          "mean": 0.8943,
+          "std": 0.0885,
+          "ci95": [
+            0.67,
+            0.973
+          ]
+        }
+      },
+      "agent": {
+        "yes_rate": {
+          "value": 0.4613,
+          "boot_ci95": [
+            0.404,
+            0.5185
+          ]
+        },
+        "agreement_rate": {
+          "value": 0.73,
+          "boot_ci95": [
+            0.6754,
+            0.7865
+          ]
+        },
+        "label_entropy": {
+          "value": 0.9957,
+          "boot_ci95": [
+            0.9733,
+            1.0
+          ]
+        }
+      },
+      "position": {
+        "yes_rate": {
+          "z": -3.391,
+          "percentile": 0.0
+        },
+        "agreement_rate": {
+          "z": -1.167,
+          "percentile": 0.112
+        },
+        "label_entropy": {
+          "z": 1.145,
+          "percentile": 1.0
+        }
+      },
+      "pseudo_annotators": {
+        "k": 20,
+        "yes_rate": {
+          "wasserstein": 0.2177,
+          "ks_stat": 1.0,
+          "ks_p": 0.0
+        },
+        "agreement_rate": {
+          "wasserstein": 0.114,
+          "ks_stat": 0.8315,
+          "ks_p": 0.0
+        },
+        "label_entropy": {
+          "wasserstein": 0.1006,
+          "ks_stat": 1.0,
+          "ks_p": 0.0
+        }
+      }
+    }
+  },
+  "local_qwen3_sft_es": {
+    "cluster1": {
+      "human": {
+        "n": 67,
+        "yes_rate": {
+          "mean": 0.2677,
+          "std": 0.0628,
+          "ci95": [
+            0.1518,
+            0.3807
+          ]
+        },
+        "agreement_rate": {
+          "mean": 0.7829,
+          "std": 0.1129,
+          "ci95": [
+            0.5391,
+            0.9441
+          ]
+        },
+        "label_entropy": {
+          "mean": 0.8229,
+          "std": 0.1052,
+          "ci95": [
+            0.6138,
+            0.9577
+          ]
+        }
+      },
+      "agent": {
+        "yes_rate": {
+          "value": 0.1785,
+          "boot_ci95": [
+            0.1347,
+            0.2256
+          ]
+        },
+        "agreement_rate": {
+          "value": 0.6046,
+          "boot_ci95": [
+            0.5458,
+            0.6654
+          ]
+        },
+        "label_entropy": {
+          "value": 0.6767,
+          "boot_ci95": [
+            0.5701,
+            0.7702
+          ]
+        }
+      },
+      "position": {
+        "yes_rate": {
+          "z": -1.42,
+          "percentile": 0.119
+        },
+        "agreement_rate": {
+          "z": -1.579,
+          "percentile": 0.075
+        },
+        "label_entropy": {
+          "z": -1.39,
+          "percentile": 0.119
+        }
+      },
+      "pseudo_annotators": {
+        "k": 20,
+        "yes_rate": {
+          "wasserstein": 0.0272,
+          "ks_stat": 0.2537,
+          "ks_p": 0.2237
+        },
+        "agreement_rate": {
+          "wasserstein": 0.1898,
+          "ks_stat": 0.8806,
+          "ks_p": 0.0
+        },
+        "label_entropy": {
+          "wasserstein": 0.044,
+          "ks_stat": 0.2537,
+          "ks_p": 0.2237
+        }
+      }
+    },
+    "cluster2": {
+      "human": {
+        "n": 234,
+        "yes_rate": {
+          "mean": 0.4723,
+          "std": 0.0786,
+          "ci95": [
+            0.3333,
+            0.614
+          ]
+        },
+        "agreement_rate": {
+          "mean": 0.867,
+          "std": 0.0611,
+          "ci95": [
+            0.7313,
+            0.9792
+          ]
+        },
+        "label_entropy": {
+          "mean": 0.9798,
+          "std": 0.0211,
+          "ci95": [
+            0.9183,
+            0.9998
+          ]
+        }
+      },
+      "agent": {
+        "yes_rate": {
+          "value": 0.5455,
+          "boot_ci95": [
+            0.4882,
+            0.5993
+          ]
+        },
+        "agreement_rate": {
+          "value": 0.8137,
+          "boot_ci95": [
+            0.7678,
+            0.8609
+          ]
+        },
+        "label_entropy": {
+          "value": 0.994,
+          "boot_ci95": [
+            0.9713,
+            1.0
+          ]
+        }
+      },
+      "position": {
+        "yes_rate": {
+          "z": 0.931,
+          "percentile": 0.782
+        },
+        "agreement_rate": {
+          "z": -0.872,
+          "percentile": 0.188
+        },
+        "label_entropy": {
+          "z": 0.672,
+          "percentile": 0.632
+        }
+      },
+      "pseudo_annotators": {
+        "k": 20,
+        "yes_rate": {
+          "wasserstein": 0.0617,
+          "ks_stat": 0.5641,
+          "ks_p": 0.0
+        },
+        "agreement_rate": {
+          "wasserstein": 0.1035,
+          "ks_stat": 0.8761,
+          "ks_p": 0.0
+        },
+        "label_entropy": {
+          "wasserstein": 0.0186,
+          "ks_stat": 0.7021,
+          "ks_p": 0.0
+        }
+      }
+    },
+    "cluster3": {
+      "human": {
+        "n": 89,
+        "yes_rate": {
+          "mean": 0.6763,
+          "std": 0.0634,
+          "ci95": [
+            0.5965,
+            0.8246
+          ]
+        },
+        "agreement_rate": {
+          "mean": 0.8363,
+          "std": 0.0911,
+          "ci95": [
+            0.6558,
+            0.9497
+          ]
+        },
+        "label_entropy": {
+          "mean": 0.8943,
+          "std": 0.0885,
+          "ci95": [
+            0.67,
+            0.973
+          ]
+        }
+      },
+      "agent": {
+        "yes_rate": {
+          "value": 0.6768,
+          "boot_ci95": [
+            0.6229,
+            0.734
+          ]
+        },
+        "agreement_rate": {
+          "value": 0.8365,
+          "boot_ci95": [
+            0.7938,
+            0.8815
+          ]
+        },
+        "label_entropy": {
+          "value": 0.9079,
+          "boot_ci95": [
+            0.8357,
+            0.956
+          ]
+        }
+      },
+      "position": {
+        "yes_rate": {
+          "z": 0.007,
+          "percentile": 0.607
+        },
+        "agreement_rate": {
+          "z": 0.002,
+          "percentile": 0.36
+        },
+        "label_entropy": {
+          "z": 0.153,
+          "percentile": 0.393
+        }
+      },
+      "pseudo_annotators": {
+        "k": 20,
+        "yes_rate": {
+          "wasserstein": 0.0423,
+          "ks_stat": 0.4944,
+          "ks_p": 0.0003
+        },
+        "agreement_rate": {
+          "wasserstein": 0.092,
+          "ks_stat": 0.7753,
+          "ks_p": 0.0
+        },
+        "label_entropy": {
+          "wasserstein": 0.0519,
+          "ks_stat": 0.4944,
+          "ks_p": 0.0003
+        }
+      }
+    }
+  },
+  "local_qwen3_dpo_es": {
+    "cluster1": {
+      "human": {
+        "n": 67,
+        "yes_rate": {
+          "mean": 0.2677,
+          "std": 0.0628,
+          "ci95": [
+            0.1518,
+            0.3807
+          ]
+        },
+        "agreement_rate": {
+          "mean": 0.7829,
+          "std": 0.1129,
+          "ci95": [
+            0.5391,
+            0.9441
+          ]
+        },
+        "label_entropy": {
+          "mean": 0.8229,
+          "std": 0.1052,
+          "ci95": [
+            0.6138,
+            0.9577
+          ]
+        }
+      },
+      "agent": {
+        "yes_rate": {
+          "value": 0.0,
+          "boot_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "agreement_rate": {
+          "value": 0.4183,
+          "boot_ci95": [
+            0.3569,
+            0.4811
+          ]
+        },
+        "label_entropy": {
+          "value": 0.0,
+          "boot_ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "position": {
+        "yes_rate": {
+          "z": -4.261,
+          "percentile": 0.0
+        },
+        "agreement_rate": {
+          "z": -3.23,
+          "percentile": 0.0
+        },
+        "label_entropy": {
+          "z": -7.824,
+          "percentile": 0.0
+        }
+      },
+      "pseudo_annotators": {
+        "k": 20,
+        "yes_rate": {
+          "wasserstein": 0.2677,
+          "ks_stat": 1.0,
+          "ks_p": 0.0
+        },
+        "agreement_rate": {
+          "wasserstein": 0.3646,
+          "ks_stat": 1.0,
+          "ks_p": 0.0
+        },
+        "label_entropy": {
+          "wasserstein": 0.8229,
+          "ks_stat": 1.0,
+          "ks_p": 0.0
+        }
+      }
+    },
+    "cluster2": {
+      "human": {
+        "n": 234,
+        "yes_rate": {
+          "mean": 0.4723,
+          "std": 0.0786,
+          "ci95": [
+            0.3333,
+            0.614
+          ]
+        },
+        "agreement_rate": {
+          "mean": 0.867,
+          "std": 0.0611,
+          "ci95": [
+            0.7313,
+            0.9792
+          ]
+        },
+        "label_entropy": {
+          "mean": 0.9798,
+          "std": 0.0211,
+          "ci95": [
+            0.9183,
+            0.9998
+          ]
+        }
+      },
+      "agent": {
+        "yes_rate": {
+          "value": 0.633,
+          "boot_ci95": [
+            0.5758,
+            0.6902
+          ]
+        },
+        "agreement_rate": {
+          "value": 0.8137,
+          "boot_ci95": [
+            0.7634,
+            0.8603
+          ]
+        },
+        "label_entropy": {
+          "value": 0.9483,
+          "boot_ci95": [
+            0.8968,
+            0.9834
+          ]
+        }
+      },
+      "position": {
+        "yes_rate": {
+          "z": 2.045,
+          "percentile": 1.0
+        },
+        "agreement_rate": {
+          "z": -0.872,
+          "percentile": 0.188
+        },
+        "label_entropy": {
+          "z": -1.492,
+          "percentile": 0.064
+        }
+      },
+      "pseudo_annotators": {
+        "k": 20,
+        "yes_rate": {
+          "wasserstein": 0.1614,
+          "ks_stat": 0.9658,
+          "ks_p": 0.0
+        },
+        "agreement_rate": {
+          "wasserstein": 0.0633,
+          "ks_stat": 0.7607,
+          "ks_p": 0.0
+        },
+        "label_entropy": {
+          "wasserstein": 0.034,
+          "ks_stat": 0.8389,
+          "ks_p": 0.0
+        }
+      }
+    },
+    "cluster3": {
+      "human": {
+        "n": 89,
+        "yes_rate": {
+          "mean": 0.6763,
+          "std": 0.0634,
+          "ci95": [
+            0.5965,
+            0.8246
+          ]
+        },
+        "agreement_rate": {
+          "mean": 0.8363,
+          "std": 0.0911,
+          "ci95": [
+            0.6558,
+            0.9497
+          ]
+        },
+        "label_entropy": {
+          "mean": 0.8943,
+          "std": 0.0885,
+          "ci95": [
+            0.67,
+            0.973
+          ]
+        }
+      },
+      "agent": {
+        "yes_rate": {
+          "value": 1.0,
+          "boot_ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "agreement_rate": {
+          "value": 0.5817,
+          "boot_ci95": [
+            0.5189,
+            0.6431
+          ]
+        },
+        "label_entropy": {
+          "value": 0.0,
+          "boot_ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "position": {
+        "yes_rate": {
+          "z": 5.104,
+          "percentile": 1.0
+        },
+        "agreement_rate": {
+          "z": -2.794,
+          "percentile": 0.011
+        },
+        "label_entropy": {
+          "z": -10.1,
+          "percentile": 0.0
+        }
+      },
+      "pseudo_annotators": {
+        "k": 20,
+        "yes_rate": {
+          "wasserstein": 0.3237,
+          "ks_stat": 1.0,
+          "ks_p": 0.0
+        },
+        "agreement_rate": {
+          "wasserstein": 0.259,
+          "ks_stat": 0.9888,
+          "ks_p": 0.0
+        },
+        "label_entropy": {
+          "wasserstein": 0.8943,
+          "ks_stat": 1.0,
+          "ks_p": 0.0
+        }
+      }
+    }
+  },
+  "local_qwen3_grpo_a20_es": {
+    "cluster1": {
+      "human": {
+        "n": 67,
+        "yes_rate": {
+          "mean": 0.2677,
+          "std": 0.0628,
+          "ci95": [
+            0.1518,
+            0.3807
+          ]
+        },
+        "agreement_rate": {
+          "mean": 0.7829,
+          "std": 0.1129,
+          "ci95": [
+            0.5391,
+            0.9441
+          ]
+        },
+        "label_entropy": {
+          "mean": 0.8229,
+          "std": 0.1052,
+          "ci95": [
+            0.6138,
+            0.9577
+          ]
+        }
+      },
+      "agent": {
+        "yes_rate": {
+          "value": 0.2222,
+          "boot_ci95": [
+            0.1751,
+            0.2694
+          ]
+        },
+        "agreement_rate": {
+          "value": 0.6616,
+          "boot_ci95": [
+            0.6046,
+            0.72
+          ]
+        },
+        "label_entropy": {
+          "value": 0.7642,
+          "boot_ci95": [
+            0.6692,
+            0.8405
+          ]
+        }
+      },
+      "position": {
+        "yes_rate": {
+          "z": -0.724,
+          "percentile": 0.209
+        },
+        "agreement_rate": {
+          "z": -1.074,
+          "percentile": 0.149
+        },
+        "label_entropy": {
+          "z": -0.558,
+          "percentile": 0.209
+        }
+      },
+      "pseudo_annotators": {
+        "k": 20,
+        "yes_rate": {
+          "wasserstein": 0.0344,
+          "ks_stat": 0.3672,
+          "ks_p": 0.0225
+        },
+        "agreement_rate": {
+          "wasserstein": 0.1595,
+          "ks_stat": 0.8507,
+          "ks_p": 0.0
+        },
+        "label_entropy": {
+          "wasserstein": 0.0531,
+          "ks_stat": 0.3672,
+          "ks_p": 0.0225
+        }
+      }
+    },
+    "cluster2": {
+      "human": {
+        "n": 234,
+        "yes_rate": {
+          "mean": 0.4723,
+          "std": 0.0786,
+          "ci95": [
+            0.3333,
+            0.614
+          ]
+        },
+        "agreement_rate": {
+          "mean": 0.867,
+          "std": 0.0611,
+          "ci95": [
+            0.7313,
+            0.9792
+          ]
+        },
+        "label_entropy": {
+          "mean": 0.9798,
+          "std": 0.0211,
+          "ci95": [
+            0.9183,
+            0.9998
+          ]
+        }
+      },
+      "agent": {
+        "yes_rate": {
+          "value": 0.5892,
+          "boot_ci95": [
+            0.532,
+            0.6465
+          ]
+        },
+        "agreement_rate": {
+          "value": 0.8137,
+          "boot_ci95": [
+            0.7605,
+            0.8615
+          ]
+        },
+        "label_entropy": {
+          "value": 0.9769,
+          "boot_ci95": [
+            0.9372,
+            0.997
+          ]
+        }
+      },
+      "position": {
+        "yes_rate": {
+          "z": 1.488,
+          "percentile": 0.94
+        },
+        "agreement_rate": {
+          "z": -0.872,
+          "percentile": 0.188
+        },
+        "label_entropy": {
+          "z": -0.139,
+          "percentile": 0.333
+        }
+      },
+      "pseudo_annotators": {
+        "k": 20,
+        "yes_rate": {
+          "wasserstein": 0.1016,
+          "ks_stat": 0.7321,
+          "ks_p": 0.0
+        },
+        "agreement_rate": {
+          "wasserstein": 0.0769,
+          "ks_stat": 0.7692,
+          "ks_p": 0.0
+        },
+        "label_entropy": {
+          "wasserstein": 0.0101,
+          "ks_stat": 0.3175,
+          "ks_p": 0.0375
+        }
+      }
+    },
+    "cluster3": {
+      "human": {
+        "n": 89,
+        "yes_rate": {
+          "mean": 0.6763,
+          "std": 0.0634,
+          "ci95": [
+            0.5965,
+            0.8246
+          ]
+        },
+        "agreement_rate": {
+          "mean": 0.8363,
+          "std": 0.0911,
+          "ci95": [
+            0.6558,
+            0.9497
+          ]
+        },
+        "label_entropy": {
+          "mean": 0.8943,
+          "std": 0.0885,
+          "ci95": [
+            0.67,
+            0.973
+          ]
+        }
+      },
+      "agent": {
+        "yes_rate": {
+          "value": 0.5993,
+          "boot_ci95": [
+            0.5455,
+            0.6566
+          ]
+        },
+        "agreement_rate": {
+          "value": 0.8175,
+          "boot_ci95": [
+            0.7689,
+            0.8651
+          ]
+        },
+        "label_entropy": {
+          "value": 0.9713,
+          "boot_ci95": [
+            0.9281,
+            0.9949
+          ]
+        }
+      },
+      "position": {
+        "yes_rate": {
+          "z": -1.214,
+          "percentile": 0.056
+        },
+        "agreement_rate": {
+          "z": -0.207,
+          "percentile": 0.292
+        },
+        "label_entropy": {
+          "z": 0.87,
+          "percentile": 0.944
+        }
+      },
+      "pseudo_annotators": {
+        "k": 20,
+        "yes_rate": {
+          "wasserstein": 0.0844,
+          "ks_stat": 0.8438,
+          "ks_p": 0.0
+        },
+        "agreement_rate": {
+          "wasserstein": 0.1036,
+          "ks_stat": 0.809,
+          "ks_p": 0.0
+        },
+        "label_entropy": {
+          "wasserstein": 0.0802,
+          "ks_stat": 0.8438,
+          "ks_p": 0.0
+        }
+      }
+    }
+  },
+  "gpt41mini_sft_es": {
+    "cluster1": {
+      "human": {
+        "n": 67,
+        "yes_rate": {
+          "mean": 0.2677,
+          "std": 0.0628,
+          "ci95": [
+            0.1518,
+            0.3807
+          ]
+        },
+        "agreement_rate": {
+          "mean": 0.7829,
+          "std": 0.1129,
+          "ci95": [
+            0.5391,
+            0.9441
+          ]
+        },
+        "label_entropy": {
+          "mean": 0.8229,
+          "std": 0.1052,
+          "ci95": [
+            0.6138,
+            0.9577
+          ]
+        }
+      },
+      "agent": {
+        "yes_rate": {
+          "value": 0.2862,
+          "boot_ci95": [
+            0.2357,
+            0.3401
+          ]
+        },
+        "agreement_rate": {
+          "value": 0.7034,
+          "boot_ci95": [
+            0.6434,
+            0.7594
+          ]
+        },
+        "label_entropy": {
+          "value": 0.8638,
+          "boot_ci95": [
+            0.7878,
+            0.9249
+          ]
+        }
+      },
+      "position": {
+        "yes_rate": {
+          "z": 0.295,
+          "percentile": 0.672
+        },
+        "agreement_rate": {
+          "z": -0.704,
+          "percentile": 0.224
+        },
+        "label_entropy": {
+          "z": 0.388,
+          "percentile": 0.672
+        }
+      },
+      "pseudo_annotators": {
+        "k": 20,
+        "yes_rate": {
+          "wasserstein": 0.0458,
+          "ks_stat": 0.6716,
+          "ks_p": 0.0
+        },
+        "agreement_rate": {
+          "wasserstein": 0.1177,
+          "ks_stat": 0.7761,
+          "ks_p": 0.0
+        },
+        "label_entropy": {
+          "wasserstein": 0.0704,
+          "ks_stat": 0.6716,
+          "ks_p": 0.0
+        }
+      }
+    },
+    "cluster2": {
+      "human": {
+        "n": 234,
+        "yes_rate": {
+          "mean": 0.4723,
+          "std": 0.0786,
+          "ci95": [
+            0.3333,
+            0.614
+          ]
+        },
+        "agreement_rate": {
+          "mean": 0.867,
+          "std": 0.0611,
+          "ci95": [
+            0.7313,
+            0.9792
+          ]
+        },
+        "label_entropy": {
+          "mean": 0.9798,
+          "std": 0.0211,
+          "ci95": [
+            0.9183,
+            0.9998
+          ]
+        }
+      },
+      "agent": {
+        "yes_rate": {
+          "value": 0.5286,
+          "boot_ci95": [
+            0.4747,
+            0.5859
+          ]
+        },
+        "agreement_rate": {
+          "value": 0.8479,
+          "boot_ci95": [
+            0.8047,
+            0.8911
+          ]
+        },
+        "label_entropy": {
+          "value": 0.9976,
+          "boot_ci95": [
+            0.9786,
+            1.0
+          ]
+        }
+      },
+      "position": {
+        "yes_rate": {
+          "z": 0.717,
+          "percentile": 0.718
+        },
+        "agreement_rate": {
+          "z": -0.312,
+          "percentile": 0.338
+        },
+        "label_entropy": {
+          "z": 0.843,
+          "percentile": 0.752
+        }
+      },
+      "pseudo_annotators": {
+        "k": 20,
+        "yes_rate": {
+          "wasserstein": 0.081,
+          "ks_stat": 0.7179,
+          "ks_p": 0.0
+        },
+        "agreement_rate": {
+          "wasserstein": 0.0533,
+          "ks_stat": 0.6624,
+          "ks_p": 0.0
+        },
+        "label_entropy": {
+          "wasserstein": 0.0184,
+          "ks_stat": 0.7521,
+          "ks_p": 0.0
+        }
+      }
+    },
+    "cluster3": {
+      "human": {
+        "n": 89,
+        "yes_rate": {
+          "mean": 0.6763,
+          "std": 0.0634,
+          "ci95": [
+            0.5965,
+            0.8246
+          ]
+        },
+        "agreement_rate": {
+          "mean": 0.8363,
+          "std": 0.0911,
+          "ci95": [
+            0.6558,
+            0.9497
+          ]
+        },
+        "label_entropy": {
+          "mean": 0.8943,
+          "std": 0.0885,
+          "ci95": [
+            0.67,
+            0.973
+          ]
+        }
+      },
+      "agent": {
+        "yes_rate": {
+          "value": 0.6498,
+          "boot_ci95": [
+            0.596,
+            0.7003
+          ]
+        },
+        "agreement_rate": {
+          "value": 0.8631,
+          "boot_ci95": [
+            0.822,
+            0.9011
+          ]
+        },
+        "label_entropy": {
+          "value": 0.9342,
+          "boot_ci95": [
+            0.8809,
+            0.9733
+          ]
+        }
+      },
+      "position": {
+        "yes_rate": {
+          "z": -0.418,
+          "percentile": 0.506
+        },
+        "agreement_rate": {
+          "z": 0.294,
+          "percentile": 0.528
+        },
+        "label_entropy": {
+          "z": 0.451,
+          "percentile": 0.494
+        }
+      },
+      "pseudo_annotators": {
+        "k": 20,
+        "yes_rate": {
+          "wasserstein": 0.0473,
+          "ks_stat": 0.5056,
+          "ks_p": 0.0002
+        },
+        "agreement_rate": {
+          "wasserstein": 0.0619,
+          "ks_stat": 0.5281,
+          "ks_p": 0.0001
+        },
+        "label_entropy": {
+          "wasserstein": 0.0559,
+          "ks_stat": 0.5056,
+          "ks_p": 0.0002
+        }
+      }
+    }
+  },
+  "gpt41mini_dpo_es": {
+    "cluster1": {
+      "human": {
+        "n": 67,
+        "yes_rate": {
+          "mean": 0.2677,
+          "std": 0.0628,
+          "ci95": [
+            0.1518,
+            0.3807
+          ]
+        },
+        "agreement_rate": {
+          "mean": 0.7829,
+          "std": 0.1129,
+          "ci95": [
+            0.5391,
+            0.9441
+          ]
+        },
+        "label_entropy": {
+          "mean": 0.8229,
+          "std": 0.1052,
+          "ci95": [
+            0.6138,
+            0.9577
+          ]
+        }
+      },
+      "agent": {
+        "yes_rate": {
+          "value": 0.0,
+          "boot_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "agreement_rate": {
+          "value": 0.4183,
+          "boot_ci95": [
+            0.3569,
+            0.4811
+          ]
+        },
+        "label_entropy": {
+          "value": 0.0,
+          "boot_ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "position": {
+        "yes_rate": {
+          "z": -4.261,
+          "percentile": 0.0
+        },
+        "agreement_rate": {
+          "z": -3.23,
+          "percentile": 0.0
+        },
+        "label_entropy": {
+          "z": -7.824,
+          "percentile": 0.0
+        }
+      },
+      "pseudo_annotators": {
+        "k": 20,
+        "yes_rate": {
+          "wasserstein": 0.2677,
+          "ks_stat": 1.0,
+          "ks_p": 0.0
+        },
+        "agreement_rate": {
+          "wasserstein": 0.3646,
+          "ks_stat": 1.0,
+          "ks_p": 0.0
+        },
+        "label_entropy": {
+          "wasserstein": 0.8229,
+          "ks_stat": 1.0,
+          "ks_p": 0.0
+        }
+      }
+    },
+    "cluster2": {
+      "human": {
+        "n": 234,
+        "yes_rate": {
+          "mean": 0.4723,
+          "std": 0.0786,
+          "ci95": [
+            0.3333,
+            0.614
+          ]
+        },
+        "agreement_rate": {
+          "mean": 0.867,
+          "std": 0.0611,
+          "ci95": [
+            0.7313,
+            0.9792
+          ]
+        },
+        "label_entropy": {
+          "mean": 0.9798,
+          "std": 0.0211,
+          "ci95": [
+            0.9183,
+            0.9998
+          ]
+        }
+      },
+      "agent": {
+        "yes_rate": {
+          "value": 0.4848,
+          "boot_ci95": [
+            0.4276,
+            0.5421
+          ]
+        },
+        "agreement_rate": {
+          "value": 0.8555,
+          "boot_ci95": [
+            0.8101,
+            0.8966
+          ]
+        },
+        "label_entropy": {
+          "value": 0.9993,
+          "boot_ci95": [
+            0.9848,
+            1.0
+          ]
+        }
+      },
+      "position": {
+        "yes_rate": {
+          "z": 0.16,
+          "percentile": 0.564
+        },
+        "agreement_rate": {
+          "z": -0.188,
+          "percentile": 0.359
+        },
+        "label_entropy": {
+          "z": 0.923,
+          "percentile": 0.885
+        }
+      },
+      "pseudo_annotators": {
+        "k": 20,
+        "yes_rate": {
+          "wasserstein": 0.068,
+          "ks_stat": 0.5641,
+          "ks_p": 0.0
+        },
+        "agreement_rate": {
+          "wasserstein": 0.0511,
+          "ks_stat": 0.641,
+          "ks_p": 0.0
+        },
+        "label_entropy": {
+          "wasserstein": 0.0196,
+          "ks_stat": 0.8846,
+          "ks_p": 0.0
+        }
+      }
+    },
+    "cluster3": {
+      "human": {
+        "n": 89,
+        "yes_rate": {
+          "mean": 0.6763,
+          "std": 0.0634,
+          "ci95": [
+            0.5965,
+            0.8246
+          ]
+        },
+        "agreement_rate": {
+          "mean": 0.8363,
+          "std": 0.0911,
+          "ci95": [
+            0.6558,
+            0.9497
+          ]
+        },
+        "label_entropy": {
+          "mean": 0.8943,
+          "std": 0.0885,
+          "ci95": [
+            0.67,
+            0.973
+          ]
+        }
+      },
+      "agent": {
+        "yes_rate": {
+          "value": 0.9966,
+          "boot_ci95": [
+            0.9899,
+            1.0
+          ]
+        },
+        "agreement_rate": {
+          "value": 0.5856,
+          "boot_ci95": [
+            0.5227,
+            0.645
+          ]
+        },
+        "label_entropy": {
+          "value": 0.0325,
+          "boot_ci95": [
+            0.0,
+            0.0815
+          ]
+        }
+      },
+      "position": {
+        "yes_rate": {
+          "z": 5.05,
+          "percentile": 1.0
+        },
+        "agreement_rate": {
+          "z": -2.752,
+          "percentile": 0.011
+        },
+        "label_entropy": {
+          "z": -9.733,
+          "percentile": 0.0
+        }
+      },
+      "pseudo_annotators": {
+        "k": 20,
+        "yes_rate": {
+          "wasserstein": 0.3203,
+          "ks_stat": 1.0,
+          "ks_p": 0.0
+        },
+        "agreement_rate": {
+          "wasserstein": 0.2552,
+          "ks_stat": 0.9888,
+          "ks_p": 0.0
+        },
+        "label_entropy": {
+          "wasserstein": 0.8618,
+          "ks_stat": 1.0,
+          "ks_p": 0.0
+        }
+      }
+    }
+  },
+  "gpt41mini_grpo_a20_es": {
+    "cluster1": {
+      "human": {
+        "n": 67,
+        "yes_rate": {
+          "mean": 0.2677,
+          "std": 0.0628,
+          "ci95": [
+            0.1518,
+            0.3807
+          ]
+        },
+        "agreement_rate": {
+          "mean": 0.7829,
+          "std": 0.1129,
+          "ci95": [
+            0.5391,
+            0.9441
+          ]
+        },
+        "label_entropy": {
+          "mean": 0.8229,
+          "std": 0.1052,
+          "ci95": [
+            0.6138,
+            0.9577
+          ]
+        }
+      },
+      "agent": {
+        "yes_rate": {
+          "value": 0.3737,
+          "boot_ci95": [
+            0.3199,
+            0.431
+          ]
+        },
+        "agreement_rate": {
+          "value": 0.7719,
+          "boot_ci95": [
+            0.7216,
+            0.8195
+          ]
+        },
+        "label_entropy": {
+          "value": 0.9535,
+          "boot_ci95": [
+            0.9042,
+            0.9862
+          ]
+        }
+      },
+      "position": {
+        "yes_rate": {
+          "z": 1.688,
+          "percentile": 0.97
+        },
+        "agreement_rate": {
+          "z": -0.098,
+          "percentile": 0.373
+        },
+        "label_entropy": {
+          "z": 1.241,
+          "percentile": 0.97
+        }
+      },
+      "pseudo_annotators": {
+        "k": 20,
+        "yes_rate": {
+          "wasserstein": 0.1084,
+          "ks_stat": 0.9701,
+          "ks_p": 0.0
+        },
+        "agreement_rate": {
+          "wasserstein": 0.0932,
+          "ks_stat": 0.6269,
+          "ks_p": 0.0
+        },
+        "label_entropy": {
+          "wasserstein": 0.132,
+          "ks_stat": 0.9701,
+          "ks_p": 0.0
+        }
+      }
+    },
+    "cluster2": {
+      "human": {
+        "n": 234,
+        "yes_rate": {
+          "mean": 0.4723,
+          "std": 0.0786,
+          "ci95": [
+            0.3333,
+            0.614
+          ]
+        },
+        "agreement_rate": {
+          "mean": 0.867,
+          "std": 0.0611,
+          "ci95": [
+            0.7313,
+            0.9792
+          ]
+        },
+        "label_entropy": {
+          "mean": 0.9798,
+          "std": 0.0211,
+          "ci95": [
+            0.9183,
+            0.9998
+          ]
+        }
+      },
+      "agent": {
+        "yes_rate": {
+          "value": 0.4579,
+          "boot_ci95": [
+            0.404,
+            0.5152
+          ]
+        },
+        "agreement_rate": {
+          "value": 0.8175,
+          "boot_ci95": [
+            0.7681,
+            0.8672
+          ]
+        },
+        "label_entropy": {
+          "value": 0.9949,
+          "boot_ci95": [
+            0.9733,
+            1.0
+          ]
+        }
+      },
+      "position": {
+        "yes_rate": {
+          "z": -0.183,
+          "percentile": 0.47
+        },
+        "agreement_rate": {
+          "z": -0.81,
+          "percentile": 0.201
+        },
+        "label_entropy": {
+          "z": 0.712,
+          "percentile": 0.752
+        }
+      },
+      "pseudo_annotators": {
+        "k": 20,
+        "yes_rate": {
+          "wasserstein": 0.0675,
+          "ks_stat": 0.5299,
+          "ks_p": 0.0
+        },
+        "agreement_rate": {
+          "wasserstein": 0.0672,
+          "ks_stat": 0.7991,
+          "ks_p": 0.0
+        },
+        "label_entropy": {
+          "wasserstein": 0.017,
+          "ks_stat": 0.7521,
+          "ks_p": 0.0
+        }
+      }
+    },
+    "cluster3": {
+      "human": {
+        "n": 89,
+        "yes_rate": {
+          "mean": 0.6763,
+          "std": 0.0634,
+          "ci95": [
+            0.5965,
+            0.8246
+          ]
+        },
+        "agreement_rate": {
+          "mean": 0.8363,
+          "std": 0.0911,
+          "ci95": [
+            0.6558,
+            0.9497
+          ]
+        },
+        "label_entropy": {
+          "mean": 0.8943,
+          "std": 0.0885,
+          "ci95": [
+            0.67,
+            0.973
+          ]
+        }
+      },
+      "agent": {
+        "yes_rate": {
+          "value": 0.6465,
+          "boot_ci95": [
+            0.5926,
+            0.7071
+          ]
+        },
+        "agreement_rate": {
+          "value": 0.8593,
+          "boot_ci95": [
+            0.8165,
+            0.8976
+          ]
+        },
+        "label_entropy": {
+          "value": 0.9372,
+          "boot_ci95": [
+            0.8767,
+            0.9751
+          ]
+        }
+      },
+      "position": {
+        "yes_rate": {
+          "z": -0.471,
+          "percentile": 0.315
+        },
+        "agreement_rate": {
+          "z": 0.252,
+          "percentile": 0.483
+        },
+        "label_entropy": {
+          "z": 0.484,
+          "percentile": 0.685
+        }
+      },
+      "pseudo_annotators": {
+        "k": 20,
+        "yes_rate": {
+          "wasserstein": 0.0483,
+          "ks_stat": 0.6854,
+          "ks_p": 0.0
+        },
+        "agreement_rate": {
+          "wasserstein": 0.0618,
+          "ks_stat": 0.5169,
+          "ks_p": 0.0002
+        },
+        "label_entropy": {
+          "wasserstein": 0.0567,
+          "ks_stat": 0.6854,
+          "ks_p": 0.0
+        }
+      }
+    }
+  }
+}

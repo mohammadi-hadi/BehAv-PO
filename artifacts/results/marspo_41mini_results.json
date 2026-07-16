@@ -1,0 +1,17 @@
+{
+  "mva": 0.8926174496644296,
+  "f1_yes": 0.8667,
+  "f1_no": 0.9101,
+  "f1_macro": 0.8884,
+  "disagreement_rate": 0.345,
+  "caa_conservative": 0.807,
+  "yes_rate_conservative": 0.2281,
+  "calibration_conservative": 0.0131,
+  "caa_mainstream": 0.8648,
+  "yes_rate_mainstream": 0.4708,
+  "calibration_mainstream": 0.0328,
+  "caa_sensitive": 0.8247,
+  "yes_rate_sensitive": 0.5497,
+  "calibration_sensitive": 0.0853,
+  "label": "marspo_41mini"
+}

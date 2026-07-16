@@ -1,0 +1,175 @@
+{
+  "label": "gpt41mini_dpo_es",
+  "language": "es",
+  "stage": "dpo",
+  "base_model": "gpt-4.1-mini-2025-04-14",
+  "model_ids": {
+    "cluster1": "ft:gpt-4.1-mini-2025-04-14:utrecht-university:behav-po-es-dpo-cluster1:DzdfSGOU",
+    "cluster2": "ft:gpt-4.1-mini-2025-04-14:utrecht-university:behav-po-es-dpo-cluster2:DzeyKxp0",
+    "cluster3": "ft:gpt-4.1-mini-2025-04-14:utrecht-university:behav-po-es-dpo-cluster3:DzcH1Nog"
+  },
+  "n_texts": 297,
+  "n_gold": 263,
+  "mva": 0.8555,
+  "f1_yes": 0.8652,
+  "f1_no": 0.8443,
+  "f1_macro": 0.8548,
+  "balanced_accuracy": 0.8669,
+  "disagreement_rate": 0.9966,
+  "caa_cluster1": 0.7619,
+  "f1_macro_cluster1": 0.4324,
+  "balanced_accuracy_cluster1": 0.5,
+  "yes_rate_cluster1": 0.0,
+  "calibration_cluster1": 0.2568,
+  "caa_cluster2": 0.8362,
+  "f1_macro_cluster2": 0.8362,
+  "balanced_accuracy_cluster2": 0.8378,
+  "yes_rate_cluster2": 0.4848,
+  "calibration_cluster2": 0.0171,
+  "caa_cluster3": 0.7224,
+  "f1_macro_cluster3": 0.4316,
+  "balanced_accuracy_cluster3": 0.5063,
+  "yes_rate_cluster3": 0.9966,
+  "calibration_cluster3": 0.3115,
+  "prevalence": {
+    "overall": {
+      "n": 297,
+      "n_gold": 263,
+      "yes_rate": 0.5817
+    },
+    "cluster1": {
+      "n_present": 126,
+      "n_majority": 126,
+      "n_tied": 0,
+      "yes_rate": 0.2381
+    },
+    "cluster2": {
+      "n_present": 297,
+      "n_majority": 287,
+      "n_tied": 10,
+      "yes_rate": 0.5261
+    },
+    "cluster3": {
+      "n_present": 297,
+      "n_majority": 281,
+      "n_tied": 16,
+      "yes_rate": 0.7189
+    }
+  },
+  "all_clusters_subset": {
+    "n_texts": 126,
+    "n_gold": 111,
+    "mva": 0.8649,
+    "f1_yes": 0.878,
+    "f1_no": 0.8485,
+    "f1_macro": 0.8633,
+    "balanced_accuracy": 0.8719,
+    "disagreement_rate": 0.9921,
+    "caa_cluster1": 0.7619,
+    "f1_macro_cluster1": 0.4324,
+    "balanced_accuracy_cluster1": 0.5,
+    "yes_rate_cluster1": 0.0,
+    "calibration_cluster1": 0.2568,
+    "caa_cluster2": 0.8621,
+    "f1_macro_cluster2": 0.8617,
+    "balanced_accuracy_cluster2": 0.864,
+    "yes_rate_cluster2": 0.5,
+    "calibration_cluster2": 0.0323,
+    "caa_cluster3": 0.8364,
+    "f1_macro_cluster3": 0.505,
+    "balanced_accuracy_cluster3": 0.5263,
+    "yes_rate_cluster3": 0.9921,
+    "calibration_cluster3": 0.307,
+    "prevalence": {
+      "overall": {
+        "n": 126,
+        "n_gold": 111,
+        "yes_rate": 0.5856
+      },
+      "cluster1": {
+        "n_present": 126,
+        "n_majority": 126,
+        "n_tied": 0,
+        "yes_rate": 0.2381
+      },
+      "cluster2": {
+        "n_present": 126,
+        "n_majority": 116,
+        "n_tied": 10,
+        "yes_rate": 0.5431
+      },
+      "cluster3": {
+        "n_present": 126,
+        "n_majority": 110,
+        "n_tied": 16,
+        "yes_rate": 0.8273
+      }
+    },
+    "mva_ci95": [
+      0.789,
+      0.9164
+    ],
+    "balanced_accuracy_ci95": [
+      0.7971,
+      0.9218
+    ]
+  },
+  "two_plus_clusters_subset": {
+    "n_texts": 297,
+    "n_gold": 263,
+    "mva": 0.8555,
+    "f1_yes": 0.8652,
+    "f1_no": 0.8443,
+    "f1_macro": 0.8548,
+    "balanced_accuracy": 0.8669,
+    "disagreement_rate": 0.9966,
+    "caa_cluster1": 0.7619,
+    "f1_macro_cluster1": 0.4324,
+    "balanced_accuracy_cluster1": 0.5,
+    "yes_rate_cluster1": 0.0,
+    "calibration_cluster1": 0.2568,
+    "caa_cluster2": 0.8362,
+    "f1_macro_cluster2": 0.8362,
+    "balanced_accuracy_cluster2": 0.8378,
+    "yes_rate_cluster2": 0.4848,
+    "calibration_cluster2": 0.0171,
+    "caa_cluster3": 0.7224,
+    "f1_macro_cluster3": 0.4316,
+    "balanced_accuracy_cluster3": 0.5063,
+    "yes_rate_cluster3": 0.9966,
+    "calibration_cluster3": 0.3115,
+    "prevalence": {
+      "overall": {
+        "n": 297,
+        "n_gold": 263,
+        "yes_rate": 0.5817
+      },
+      "cluster1": {
+        "n_present": 126,
+        "n_majority": 126,
+        "n_tied": 0,
+        "yes_rate": 0.2381
+      },
+      "cluster2": {
+        "n_present": 297,
+        "n_majority": 287,
+        "n_tied": 10,
+        "yes_rate": 0.5261
+      },
+      "cluster3": {
+        "n_present": 297,
+        "n_majority": 281,
+        "n_tied": 16,
+        "yes_rate": 0.7189
+      }
+    },
+    "mva_ci95": [
+      0.8079,
+      0.8929
+    ],
+    "balanced_accuracy_ci95": [
+      0.8205,
+      0.9027
+    ]
+  }
+}

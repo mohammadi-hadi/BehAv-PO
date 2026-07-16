@@ -1,0 +1,17 @@
+{
+  "mva": 0.8657718120805369,
+  "f1_yes": 0.84,
+  "f1_no": 0.8844,
+  "f1_macro": 0.8622,
+  "disagreement_rate": 0.462,
+  "caa_conservative": 0.8202,
+  "yes_rate_conservative": 0.2456,
+  "calibration_conservative": 0.0306,
+  "caa_mainstream": 0.8491,
+  "yes_rate_mainstream": 0.4854,
+  "calibration_mainstream": 0.0474,
+  "caa_sensitive": 0.8041,
+  "yes_rate_sensitive": 0.6813,
+  "calibration_sensitive": 0.0463,
+  "label": "grpo"
+}

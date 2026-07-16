@@ -1,0 +1,60 @@
+{
+  "language": "es",
+  "chosen_k": 3,
+  "forced": true,
+  "silhouette_best_k": 2,
+  "silhouette_best": 0.4647,
+  "silhouette_at_chosen": 0.3489,
+  "silhouette": 0.3489,
+  "n_annotators": 390,
+  "n_texts": 3660,
+  "sizes": {
+    "cluster1": 67,
+    "cluster2": 234,
+    "cluster3": 89
+  },
+  "features": {
+    "cluster1": {
+      "yes_rate": {
+        "mean": 0.2677,
+        "std": 0.0628
+      },
+      "agreement_rate": {
+        "mean": 0.7829,
+        "std": 0.1129
+      },
+      "label_entropy": {
+        "mean": 0.8229,
+        "std": 0.1052
+      }
+    },
+    "cluster2": {
+      "yes_rate": {
+        "mean": 0.4723,
+        "std": 0.0786
+      },
+      "agreement_rate": {
+        "mean": 0.867,
+        "std": 0.0611
+      },
+      "label_entropy": {
+        "mean": 0.9798,
+        "std": 0.0211
+      }
+    },
+    "cluster3": {
+      "yes_rate": {
+        "mean": 0.6763,
+        "std": 0.0634
+      },
+      "agreement_rate": {
+        "mean": 0.8363,
+        "std": 0.0911
+      },
+      "label_entropy": {
+        "mean": 0.8943,
+        "std": 0.0885
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "mva": 0.889261744966443,
+  "f1_yes": 0.8596,
+  "f1_no": 0.9086,
+  "f1_macro": 0.8841,
+  "disagreement_rate": 0.5936,
+  "caa_conservative": 0.8421,
+  "yes_rate_conservative": 0.1287,
+  "calibration_conservative": 0.0863,
+  "caa_mainstream": 0.8711,
+  "yes_rate_mainstream": 0.4181,
+  "calibration_mainstream": 0.0199,
+  "caa_sensitive": 0.8247,
+  "yes_rate_sensitive": 0.7164,
+  "calibration_sensitive": 0.0814,
+  "label": "sft_pure_41mini"
+}

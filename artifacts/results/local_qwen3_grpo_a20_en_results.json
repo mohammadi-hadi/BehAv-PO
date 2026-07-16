@@ -1,0 +1,172 @@
+{
+  "label": "local_qwen3_grpo_a20_en",
+  "language": "en",
+  "stage": "grpo_a20",
+  "base_model": "Qwen/Qwen3-8B",
+  "reward_formula": "(1-alpha)*r_indiv + alpha*r_team",
+  "alpha": 0.2,
+  "n_texts": 342,
+  "n_gold": 298,
+  "mva": 0.8188,
+  "f1_yes": 0.7652,
+  "f1_no": 0.8525,
+  "f1_macro": 0.8088,
+  "balanced_accuracy": 0.807,
+  "disagreement_rate": 0.4591,
+  "caa_cluster1": 0.8421,
+  "f1_macro_cluster1": 0.766,
+  "balanced_accuracy_cluster1": 0.7622,
+  "yes_rate_cluster1": 0.2164,
+  "calibration_cluster1": 0.0331,
+  "caa_cluster2": 0.8145,
+  "f1_macro_cluster2": 0.8079,
+  "balanced_accuracy_cluster2": 0.8057,
+  "yes_rate_cluster2": 0.4094,
+  "calibration_cluster2": 0.0104,
+  "caa_cluster3": 0.7526,
+  "f1_macro_cluster3": 0.6988,
+  "balanced_accuracy_cluster3": 0.6988,
+  "yes_rate_cluster3": 0.6637,
+  "calibration_cluster3": 0.0153,
+  "prevalence": {
+    "overall": {
+      "n": 342,
+      "n_gold": 298,
+      "yes_rate": 0.3926
+    },
+    "cluster1": {
+      "n_present": 228,
+      "n_majority": 228,
+      "n_tied": 0,
+      "yes_rate": 0.2193
+    },
+    "cluster2": {
+      "n_present": 342,
+      "n_majority": 318,
+      "n_tied": 24,
+      "yes_rate": 0.4182
+    },
+    "cluster3": {
+      "n_present": 114,
+      "n_majority": 97,
+      "n_tied": 17,
+      "yes_rate": 0.7113
+    }
+  },
+  "all_clusters_subset": {
+    "n_texts": 57,
+    "n_gold": 47,
+    "mva": 0.8511,
+    "f1_yes": 0.8108,
+    "f1_no": 0.8772,
+    "f1_macro": 0.844,
+    "balanced_accuracy": 0.8412,
+    "disagreement_rate": 0.386,
+    "caa_cluster1": 0.8246,
+    "f1_macro_cluster1": 0.7828,
+    "balanced_accuracy_cluster1": 0.7952,
+    "yes_rate_cluster1": 0.2982,
+    "calibration_cluster1": 0.1149,
+    "caa_cluster2": 0.8636,
+    "f1_macro_cluster2": 0.8527,
+    "balanced_accuracy_cluster2": 0.8527,
+    "yes_rate_cluster2": 0.4211,
+    "calibration_cluster2": 0.0013,
+    "caa_cluster3": 0.7544,
+    "f1_macro_cluster3": 0.7237,
+    "balanced_accuracy_cluster3": 0.7237,
+    "yes_rate_cluster3": 0.6667,
+    "calibration_cluster3": 0.0123,
+    "prevalence": {
+      "overall": {
+        "n": 57,
+        "n_gold": 47,
+        "yes_rate": 0.4043
+      },
+      "cluster1": {
+        "n_present": 57,
+        "n_majority": 57,
+        "n_tied": 0,
+        "yes_rate": 0.2632
+      },
+      "cluster2": {
+        "n_present": 57,
+        "n_majority": 44,
+        "n_tied": 13,
+        "yes_rate": 0.3636
+      },
+      "cluster3": {
+        "n_present": 57,
+        "n_majority": 57,
+        "n_tied": 0,
+        "yes_rate": 0.6667
+      }
+    },
+    "mva_ci95": [
+      0.7232,
+      0.926
+    ],
+    "balanced_accuracy_ci95": [
+      0.7117,
+      0.9191
+    ]
+  },
+  "two_plus_clusters_subset": {
+    "n_texts": 285,
+    "n_gold": 245,
+    "mva": 0.8367,
+    "f1_yes": 0.7802,
+    "f1_no": 0.8701,
+    "f1_macro": 0.8252,
+    "balanced_accuracy": 0.8284,
+    "disagreement_rate": 0.4596,
+    "caa_cluster1": 0.8421,
+    "f1_macro_cluster1": 0.766,
+    "balanced_accuracy_cluster1": 0.7622,
+    "yes_rate_cluster1": 0.207,
+    "calibration_cluster1": 0.0237,
+    "caa_cluster2": 0.8264,
+    "f1_macro_cluster2": 0.8186,
+    "balanced_accuracy_cluster2": 0.8186,
+    "yes_rate_cluster2": 0.407,
+    "calibration_cluster2": 0.0128,
+    "caa_cluster3": 0.7526,
+    "f1_macro_cluster3": 0.6988,
+    "balanced_accuracy_cluster3": 0.6988,
+    "yes_rate_cluster3": 0.6561,
+    "calibration_cluster3": 0.0229,
+    "prevalence": {
+      "overall": {
+        "n": 285,
+        "n_gold": 245,
+        "yes_rate": 0.3633
+      },
+      "cluster1": {
+        "n_present": 228,
+        "n_majority": 228,
+        "n_tied": 0,
+        "yes_rate": 0.2193
+      },
+      "cluster2": {
+        "n_present": 285,
+        "n_majority": 265,
+        "n_tied": 20,
+        "yes_rate": 0.3962
+      },
+      "cluster3": {
+        "n_present": 114,
+        "n_majority": 97,
+        "n_tied": 17,
+        "yes_rate": 0.7113
+      }
+    },
+    "mva_ci95": [
+      0.7853,
+      0.8777
+    ],
+    "balanced_accuracy_ci95": [
+      0.7762,
+      0.8704
+    ]
+  }
+}

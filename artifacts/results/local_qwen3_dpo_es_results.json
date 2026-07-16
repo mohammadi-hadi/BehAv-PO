@@ -1,0 +1,171 @@
+{
+  "label": "local_qwen3_dpo_es",
+  "language": "es",
+  "stage": "dpo",
+  "base_model": "Qwen/Qwen3-8B",
+  "reward_formula": "(1-alpha)*r_indiv + alpha*r_team",
+  "n_texts": 297,
+  "n_gold": 263,
+  "mva": 0.8137,
+  "f1_yes": 0.8454,
+  "f1_no": 0.7656,
+  "f1_macro": 0.8055,
+  "balanced_accuracy": 0.8015,
+  "disagreement_rate": 1.0,
+  "caa_cluster1": 0.7619,
+  "f1_macro_cluster1": 0.4324,
+  "balanced_accuracy_cluster1": 0.5,
+  "yes_rate_cluster1": 0.0,
+  "calibration_cluster1": 0.2568,
+  "caa_cluster2": 0.77,
+  "f1_macro_cluster2": 0.7648,
+  "balanced_accuracy_cluster2": 0.7643,
+  "yes_rate_cluster2": 0.633,
+  "calibration_cluster2": 0.1653,
+  "caa_cluster3": 0.7189,
+  "f1_macro_cluster3": 0.4182,
+  "balanced_accuracy_cluster3": 0.5,
+  "yes_rate_cluster3": 1.0,
+  "calibration_cluster3": 0.3149,
+  "prevalence": {
+    "overall": {
+      "n": 297,
+      "n_gold": 263,
+      "yes_rate": 0.5817
+    },
+    "cluster1": {
+      "n_present": 126,
+      "n_majority": 126,
+      "n_tied": 0,
+      "yes_rate": 0.2381
+    },
+    "cluster2": {
+      "n_present": 297,
+      "n_majority": 287,
+      "n_tied": 10,
+      "yes_rate": 0.5261
+    },
+    "cluster3": {
+      "n_present": 297,
+      "n_majority": 281,
+      "n_tied": 16,
+      "yes_rate": 0.7189
+    }
+  },
+  "all_clusters_subset": {
+    "n_texts": 126,
+    "n_gold": 111,
+    "mva": 0.8288,
+    "f1_yes": 0.8593,
+    "f1_no": 0.7816,
+    "f1_macro": 0.8204,
+    "balanced_accuracy": 0.8157,
+    "disagreement_rate": 1.0,
+    "caa_cluster1": 0.7619,
+    "f1_macro_cluster1": 0.4324,
+    "balanced_accuracy_cluster1": 0.5,
+    "yes_rate_cluster1": 0.0,
+    "calibration_cluster1": 0.2568,
+    "caa_cluster2": 0.7931,
+    "f1_macro_cluster2": 0.7868,
+    "balanced_accuracy_cluster2": 0.7841,
+    "yes_rate_cluster2": 0.6508,
+    "calibration_cluster2": 0.1831,
+    "caa_cluster3": 0.8273,
+    "f1_macro_cluster3": 0.4527,
+    "balanced_accuracy_cluster3": 0.5,
+    "yes_rate_cluster3": 1.0,
+    "calibration_cluster3": 0.3149,
+    "prevalence": {
+      "overall": {
+        "n": 126,
+        "n_gold": 111,
+        "yes_rate": 0.5856
+      },
+      "cluster1": {
+        "n_present": 126,
+        "n_majority": 126,
+        "n_tied": 0,
+        "yes_rate": 0.2381
+      },
+      "cluster2": {
+        "n_present": 126,
+        "n_majority": 116,
+        "n_tied": 10,
+        "yes_rate": 0.5431
+      },
+      "cluster3": {
+        "n_present": 126,
+        "n_majority": 110,
+        "n_tied": 16,
+        "yes_rate": 0.8273
+      }
+    },
+    "mva_ci95": [
+      0.748,
+      0.8876
+    ],
+    "balanced_accuracy_ci95": [
+      0.7334,
+      0.8768
+    ]
+  },
+  "two_plus_clusters_subset": {
+    "n_texts": 297,
+    "n_gold": 263,
+    "mva": 0.8137,
+    "f1_yes": 0.8454,
+    "f1_no": 0.7656,
+    "f1_macro": 0.8055,
+    "balanced_accuracy": 0.8015,
+    "disagreement_rate": 1.0,
+    "caa_cluster1": 0.7619,
+    "f1_macro_cluster1": 0.4324,
+    "balanced_accuracy_cluster1": 0.5,
+    "yes_rate_cluster1": 0.0,
+    "calibration_cluster1": 0.2568,
+    "caa_cluster2": 0.77,
+    "f1_macro_cluster2": 0.7648,
+    "balanced_accuracy_cluster2": 0.7643,
+    "yes_rate_cluster2": 0.633,
+    "calibration_cluster2": 0.1653,
+    "caa_cluster3": 0.7189,
+    "f1_macro_cluster3": 0.4182,
+    "balanced_accuracy_cluster3": 0.5,
+    "yes_rate_cluster3": 1.0,
+    "calibration_cluster3": 0.3149,
+    "prevalence": {
+      "overall": {
+        "n": 297,
+        "n_gold": 263,
+        "yes_rate": 0.5817
+      },
+      "cluster1": {
+        "n_present": 126,
+        "n_majority": 126,
+        "n_tied": 0,
+        "yes_rate": 0.2381
+      },
+      "cluster2": {
+        "n_present": 297,
+        "n_majority": 287,
+        "n_tied": 10,
+        "yes_rate": 0.5261
+      },
+      "cluster3": {
+        "n_present": 297,
+        "n_majority": 281,
+        "n_tied": 16,
+        "yes_rate": 0.7189
+      }
+    },
+    "mva_ci95": [
+      0.7622,
+      0.8561
+    ],
+    "balanced_accuracy_ci95": [
+      0.7491,
+      0.8452
+    ]
+  }
+}

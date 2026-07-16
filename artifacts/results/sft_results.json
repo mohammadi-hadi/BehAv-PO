@@ -1,0 +1,17 @@
+{
+  "mva": 0.8791946308724832,
+  "f1_yes": 0.8364,
+  "f1_no": 0.9043,
+  "f1_macro": 0.8704,
+  "disagreement_rate": 0.3889,
+  "caa_conservative": 0.8421,
+  "yes_rate_conservative": 0.2105,
+  "calibration_conservative": 0.0045,
+  "caa_mainstream": 0.8459,
+  "yes_rate_mainstream": 0.3772,
+  "calibration_mainstream": 0.0608,
+  "caa_sensitive": 0.8247,
+  "yes_rate_sensitive": 0.5848,
+  "calibration_sensitive": 0.0502,
+  "label": "sft"
+}

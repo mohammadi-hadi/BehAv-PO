@@ -1,0 +1,171 @@
+{
+  "label": "local_qwen3_dpo_en",
+  "language": "en",
+  "stage": "dpo",
+  "base_model": "Qwen/Qwen3-8B",
+  "reward_formula": "(1-alpha)*r_indiv + alpha*r_team",
+  "n_texts": 342,
+  "n_gold": 298,
+  "mva": 0.7819,
+  "f1_yes": 0.7687,
+  "f1_no": 0.7937,
+  "f1_macro": 0.7812,
+  "balanced_accuracy": 0.8068,
+  "disagreement_rate": 1.0,
+  "caa_cluster1": 0.7807,
+  "f1_macro_cluster1": 0.4384,
+  "balanced_accuracy_cluster1": 0.5,
+  "yes_rate_cluster1": 0.0,
+  "calibration_cluster1": 0.1833,
+  "caa_cluster2": 0.7704,
+  "f1_macro_cluster2": 0.7704,
+  "balanced_accuracy_cluster2": 0.79,
+  "yes_rate_cluster2": 0.5877,
+  "calibration_cluster2": 0.1679,
+  "caa_cluster3": 0.7113,
+  "f1_macro_cluster3": 0.4157,
+  "balanced_accuracy_cluster3": 0.5,
+  "yes_rate_cluster3": 1.0,
+  "calibration_cluster3": 0.321,
+  "prevalence": {
+    "overall": {
+      "n": 342,
+      "n_gold": 298,
+      "yes_rate": 0.3926
+    },
+    "cluster1": {
+      "n_present": 228,
+      "n_majority": 228,
+      "n_tied": 0,
+      "yes_rate": 0.2193
+    },
+    "cluster2": {
+      "n_present": 342,
+      "n_majority": 318,
+      "n_tied": 24,
+      "yes_rate": 0.4182
+    },
+    "cluster3": {
+      "n_present": 114,
+      "n_majority": 97,
+      "n_tied": 17,
+      "yes_rate": 0.7113
+    }
+  },
+  "all_clusters_subset": {
+    "n_texts": 57,
+    "n_gold": 47,
+    "mva": 0.8298,
+    "f1_yes": 0.8182,
+    "f1_no": 0.84,
+    "f1_macro": 0.8291,
+    "balanced_accuracy": 0.8487,
+    "disagreement_rate": 1.0,
+    "caa_cluster1": 0.7368,
+    "f1_macro_cluster1": 0.4242,
+    "balanced_accuracy_cluster1": 0.5,
+    "yes_rate_cluster1": 0.0,
+    "calibration_cluster1": 0.1833,
+    "caa_cluster2": 0.7955,
+    "f1_macro_cluster2": 0.7928,
+    "balanced_accuracy_cluster2": 0.8259,
+    "yes_rate_cluster2": 0.5965,
+    "calibration_cluster2": 0.1767,
+    "caa_cluster3": 0.6667,
+    "f1_macro_cluster3": 0.4,
+    "balanced_accuracy_cluster3": 0.5,
+    "yes_rate_cluster3": 1.0,
+    "calibration_cluster3": 0.321,
+    "prevalence": {
+      "overall": {
+        "n": 57,
+        "n_gold": 47,
+        "yes_rate": 0.4043
+      },
+      "cluster1": {
+        "n_present": 57,
+        "n_majority": 57,
+        "n_tied": 0,
+        "yes_rate": 0.2632
+      },
+      "cluster2": {
+        "n_present": 57,
+        "n_majority": 44,
+        "n_tied": 13,
+        "yes_rate": 0.3636
+      },
+      "cluster3": {
+        "n_present": 57,
+        "n_majority": 57,
+        "n_tied": 0,
+        "yes_rate": 0.6667
+      }
+    },
+    "mva_ci95": [
+      0.6986,
+      0.9111
+    ],
+    "balanced_accuracy_ci95": [
+      0.7204,
+      0.9243
+    ]
+  },
+  "two_plus_clusters_subset": {
+    "n_texts": 285,
+    "n_gold": 245,
+    "mva": 0.7755,
+    "f1_yes": 0.7534,
+    "f1_no": 0.794,
+    "f1_macro": 0.7737,
+    "balanced_accuracy": 0.8117,
+    "disagreement_rate": 1.0,
+    "caa_cluster1": 0.7807,
+    "f1_macro_cluster1": 0.4384,
+    "balanced_accuracy_cluster1": 0.5,
+    "yes_rate_cluster1": 0.0,
+    "calibration_cluster1": 0.1833,
+    "caa_cluster2": 0.7623,
+    "f1_macro_cluster2": 0.762,
+    "balanced_accuracy_cluster2": 0.79,
+    "yes_rate_cluster2": 0.5895,
+    "calibration_cluster2": 0.1697,
+    "caa_cluster3": 0.7113,
+    "f1_macro_cluster3": 0.4157,
+    "balanced_accuracy_cluster3": 0.5,
+    "yes_rate_cluster3": 1.0,
+    "calibration_cluster3": 0.321,
+    "prevalence": {
+      "overall": {
+        "n": 285,
+        "n_gold": 245,
+        "yes_rate": 0.3633
+      },
+      "cluster1": {
+        "n_present": 228,
+        "n_majority": 228,
+        "n_tied": 0,
+        "yes_rate": 0.2193
+      },
+      "cluster2": {
+        "n_present": 285,
+        "n_majority": 265,
+        "n_tied": 20,
+        "yes_rate": 0.3962
+      },
+      "cluster3": {
+        "n_present": 114,
+        "n_majority": 97,
+        "n_tied": 17,
+        "yes_rate": 0.7113
+      }
+    },
+    "mva_ci95": [
+      0.7192,
+      0.8233
+    ],
+    "balanced_accuracy_ci95": [
+      0.7581,
+      0.8557
+    ]
+  }
+}

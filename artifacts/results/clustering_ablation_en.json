@@ -1,0 +1,142 @@
+{
+  "language": "en",
+  "ablation": "kmeans on (agreement_rate, label_entropy) -- yes_rate dropped",
+  "k_scan": [
+    {
+      "k": 2,
+      "silhouette": 0.4989,
+      "min_cluster_size": 73
+    },
+    {
+      "k": 3,
+      "silhouette": 0.4864,
+      "min_cluster_size": 24
+    },
+    {
+      "k": 4,
+      "silhouette": 0.4004,
+      "min_cluster_size": 16
+    },
+    {
+      "k": 5,
+      "silhouette": 0.4185,
+      "min_cluster_size": 12
+    },
+    {
+      "k": 6,
+      "silhouette": 0.3789,
+      "min_cluster_size": 12
+    },
+    {
+      "k": 7,
+      "silhouette": 0.3671,
+      "min_cluster_size": 9
+    },
+    {
+      "k": 8,
+      "silhouette": 0.397,
+      "min_cluster_size": 7
+    },
+    {
+      "k": 9,
+      "silhouette": 0.352,
+      "min_cluster_size": 9
+    },
+    {
+      "k": 10,
+      "silhouette": 0.3736,
+      "min_cluster_size": 5
+    }
+  ],
+  "best_k": 2,
+  "at_best_k": {
+    "k": 2,
+    "silhouette": 0.4989,
+    "sizes": {
+      "cluster1": 73,
+      "cluster2": 275
+    },
+    "min_share": 0.2098,
+    "normalized_size_entropy": 0.741,
+    "ari_vs_3feature": 0.4876,
+    "crosstab_vs_3feature": {
+      "cluster1": {
+        "cluster1": 46,
+        "cluster2": 29
+      },
+      "cluster2": {
+        "cluster1": 1,
+        "cluster2": 223
+      },
+      "cluster3": {
+        "cluster1": 26,
+        "cluster2": 23
+      }
+    },
+    "cluster_mean_yes_rate": {
+      "cluster1": 0.3502,
+      "cluster2": 0.4359
+    },
+    "min_pairwise_yes_rate_gap": 0.0857,
+    "all_pairwise_yes_rate_gaps": [
+      0.0857
+    ]
+  },
+  "at_k3": {
+    "k": 3,
+    "silhouette": 0.4864,
+    "sizes": {
+      "cluster1": 72,
+      "cluster2": 252,
+      "cluster3": 24
+    },
+    "min_share": 0.069,
+    "normalized_size_entropy": 0.6773,
+    "ari_vs_3feature": 0.7106,
+    "crosstab_vs_3feature": {
+      "cluster1": {
+        "cluster1": 65,
+        "cluster2": 7,
+        "cluster3": 3
+      },
+      "cluster2": {
+        "cluster1": 0,
+        "cluster2": 223,
+        "cluster3": 1
+      },
+      "cluster3": {
+        "cluster1": 7,
+        "cluster2": 22,
+        "cluster3": 20
+      }
+    },
+    "cluster_mean_yes_rate": {
+      "cluster1": 0.2668,
+      "cluster2": 0.4522,
+      "cluster3": 0.511
+    },
+    "min_pairwise_yes_rate_gap": 0.0588,
+    "all_pairwise_yes_rate_gaps": [
+      0.1854,
+      0.0588
+    ]
+  },
+  "reference_3feature": {
+    "chosen_k": 3,
+    "silhouette": 0.4275,
+    "sizes": {
+      "cluster1": 75,
+      "cluster2": 224,
+      "cluster3": 49
+    },
+    "min_share": 0.1408
+  },
+  "decision_checks_at_k3": {
+    "min_share_ge_0.15": false,
+    "min_share_gt_3feature": false,
+    "silhouette_within_0.05_of_3feature": true,
+    "all_yes_rate_gaps_ge_0.10": false
+  },
+  "recommendation": "report-only",
+  "keyword_features": "Text-content (keyword) features were NOT used for annotator clustering, for three reasons: (1) block-design confound -- annotator groups label disjoint text blocks, so text-content features cluster annotators by group assignment, not behavior; (2) sparsity -- task2/3 labels exist only for YES labels, so low-yes-rate annotators give very noisy features; (3) circularity -- richer coupling between cluster definitions and the labels agents are evaluated on, while the task stays binary."
+}

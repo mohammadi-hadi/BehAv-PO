@@ -1,0 +1,40 @@
+[
+  {
+    "label": "always_no",
+    "mva": 0.6074
+  },
+  {
+    "label": "always_yes",
+    "mva": 0.3926
+  },
+  {
+    "label": "single_zero_shot",
+    "mva": 0.8121,
+    "yes_rate": 0.2427
+  },
+  {
+    "mva": 0.8087248322147651,
+    "f1_yes": 0.6952,
+    "f1_no": 0.8606,
+    "f1_macro": 0.7779,
+    "disagreement_rate": 0.0263,
+    "caa_conservative": 0.7456,
+    "yes_rate_conservative": 0.2544,
+    "calibration_conservative": 0.0394,
+    "caa_mainstream": 0.7862,
+    "yes_rate_mainstream": 0.2573,
+    "calibration_mainstream": 0.1807,
+    "caa_sensitive": 0.6289,
+    "yes_rate_sensitive": 0.2485,
+    "calibration_sensitive": 0.3865,
+    "label": "zero_shot_ensemble"
+  },
+  {
+    "label": "persona_prompts",
+    "mva": 0.8188,
+    "disagreement_rate": 0.3246,
+    "yes_rate_conservative": 0.1579,
+    "yes_rate_mainstream": 0.2661,
+    "yes_rate_sensitive": 0.4766
+  }
+]

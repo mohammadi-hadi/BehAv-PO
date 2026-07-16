@@ -1,0 +1,17 @@
+{
+  "mva": 0.8859060402684564,
+  "f1_yes": 0.8547,
+  "f1_no": 0.9061,
+  "f1_macro": 0.8804,
+  "disagreement_rate": 0.7251,
+  "caa_conservative": 0.8377,
+  "yes_rate_conservative": 0.1257,
+  "calibration_conservative": 0.0893,
+  "caa_mainstream": 0.8616,
+  "yes_rate_mainstream": 0.424,
+  "calibration_mainstream": 0.014,
+  "caa_sensitive": 0.7629,
+  "yes_rate_sensitive": 0.848,
+  "calibration_sensitive": 0.213,
+  "label": "dpo_bb05_41mini"
+}
