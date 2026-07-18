@@ -18,7 +18,7 @@ trained locally with MLX LoRA on Apple Silicon (Qwen-EN, Qwen-ES).
 
 | Stage | GPT-EN | GPT-ES | Qwen-EN | Qwen-ES |
 |-------|--------|--------|---------|---------|
-| Zero-shot ensemble | 77.8 | — | 76.8 | 72.9 |
+| Zero-shot ensemble | 64.7 | 57.4 | 76.8 | 72.9 |
 | SFT (mixed) | 89.1 | 84.6 | **84.7** | **81.0** |
 | DPO (individual-only) | 85.8 | **85.5** | 78.1 | 80.5 |
 | GRPO (α=0.2 team reward) | **89.9** | 85.1 | 80.9 | 80.6 |
@@ -30,7 +30,7 @@ label-balanced SFT ablation (83.4). Source: `artifacts/results/*.json`.
 
 - **Zero-shot collapse.** Without fine-tuning the three agents are copies:
   0.0% disagreement in both Qwen settings (identical YES rates 0.427 EN /
-  0.461 ES), 2.6% on GPT-EN.
+  0.461 ES), 3.2% on GPT-EN.
 - **DPO polarization (4 of 4 settings).** Individual-only DPO pins the
   outer agents' YES rates to the extremes (0.000/1.000 on Qwen,
   0.000/0.997 on GPT-ES, 0.015/0.953 on GPT-EN); disagreement saturates at

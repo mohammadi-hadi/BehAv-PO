@@ -1,0 +1,175 @@
+{
+  "label": "persona_41mini",
+  "language": "en",
+  "stage": "persona",
+  "base_model": "gpt-4.1-mini-2025-04-14",
+  "model_ids": {
+    "cluster1": "gpt-4.1-mini-2025-04-14",
+    "cluster2": "gpt-4.1-mini-2025-04-14",
+    "cluster3": "gpt-4.1-mini-2025-04-14"
+  },
+  "n_texts": 342,
+  "n_gold": 298,
+  "mva": 0.745,
+  "f1_yes": 0.5422,
+  "f1_no": 0.8233,
+  "f1_macro": 0.6827,
+  "balanced_accuracy": 0.6813,
+  "disagreement_rate": 0.2076,
+  "caa_cluster1": 0.7939,
+  "f1_macro_cluster1": 0.6402,
+  "balanced_accuracy_cluster1": 0.6235,
+  "yes_rate_cluster1": 0.1111,
+  "calibration_cluster1": 0.0722,
+  "caa_cluster2": 0.7107,
+  "f1_macro_cluster2": 0.6459,
+  "balanced_accuracy_cluster2": 0.6584,
+  "yes_rate_cluster2": 0.1608,
+  "calibration_cluster2": 0.259,
+  "caa_cluster3": 0.6186,
+  "f1_macro_cluster3": 0.6171,
+  "balanced_accuracy_cluster3": 0.7213,
+  "yes_rate_cluster3": 0.2982,
+  "calibration_cluster3": 0.3808,
+  "prevalence": {
+    "overall": {
+      "n": 342,
+      "n_gold": 298,
+      "yes_rate": 0.3926
+    },
+    "cluster1": {
+      "n_present": 228,
+      "n_majority": 228,
+      "n_tied": 0,
+      "yes_rate": 0.2193
+    },
+    "cluster2": {
+      "n_present": 342,
+      "n_majority": 318,
+      "n_tied": 24,
+      "yes_rate": 0.4182
+    },
+    "cluster3": {
+      "n_present": 114,
+      "n_majority": 97,
+      "n_tied": 17,
+      "yes_rate": 0.7113
+    }
+  },
+  "all_clusters_subset": {
+    "n_texts": 57,
+    "n_gold": 47,
+    "mva": 0.7447,
+    "f1_yes": 0.5714,
+    "f1_no": 0.8182,
+    "f1_macro": 0.6948,
+    "balanced_accuracy": 0.6927,
+    "disagreement_rate": 0.2281,
+    "caa_cluster1": 0.7719,
+    "f1_macro_cluster1": 0.667,
+    "balanced_accuracy_cluster1": 0.6524,
+    "yes_rate_cluster1": 0.1754,
+    "calibration_cluster1": 0.0079,
+    "caa_cluster2": 0.75,
+    "f1_macro_cluster2": 0.6927,
+    "balanced_accuracy_cluster2": 0.683,
+    "yes_rate_cluster2": 0.2456,
+    "calibration_cluster2": 0.1742,
+    "caa_cluster3": 0.7018,
+    "f1_macro_cluster3": 0.7003,
+    "balanced_accuracy_cluster3": 0.7632,
+    "yes_rate_cluster3": 0.4035,
+    "calibration_cluster3": 0.2755,
+    "prevalence": {
+      "overall": {
+        "n": 57,
+        "n_gold": 47,
+        "yes_rate": 0.4043
+      },
+      "cluster1": {
+        "n_present": 57,
+        "n_majority": 57,
+        "n_tied": 0,
+        "yes_rate": 0.2632
+      },
+      "cluster2": {
+        "n_present": 57,
+        "n_majority": 44,
+        "n_tied": 13,
+        "yes_rate": 0.3636
+      },
+      "cluster3": {
+        "n_present": 57,
+        "n_majority": 57,
+        "n_tied": 0,
+        "yes_rate": 0.6667
+      }
+    },
+    "mva_ci95": [
+      0.6049,
+      0.8475
+    ],
+    "balanced_accuracy_ci95": [
+      0.5505,
+      0.8058
+    ]
+  },
+  "two_plus_clusters_subset": {
+    "n_texts": 285,
+    "n_gold": 245,
+    "mva": 0.7755,
+    "f1_yes": 0.5802,
+    "f1_no": 0.8468,
+    "f1_macro": 0.7135,
+    "balanced_accuracy": 0.7007,
+    "disagreement_rate": 0.1965,
+    "caa_cluster1": 0.7939,
+    "f1_macro_cluster1": 0.6402,
+    "balanced_accuracy_cluster1": 0.6235,
+    "yes_rate_cluster1": 0.1158,
+    "calibration_cluster1": 0.0675,
+    "caa_cluster2": 0.7396,
+    "f1_macro_cluster2": 0.6779,
+    "balanced_accuracy_cluster2": 0.678,
+    "yes_rate_cluster2": 0.1754,
+    "calibration_cluster2": 0.2444,
+    "caa_cluster3": 0.6186,
+    "f1_macro_cluster3": 0.6171,
+    "balanced_accuracy_cluster3": 0.7213,
+    "yes_rate_cluster3": 0.2947,
+    "calibration_cluster3": 0.3843,
+    "prevalence": {
+      "overall": {
+        "n": 285,
+        "n_gold": 245,
+        "yes_rate": 0.3633
+      },
+      "cluster1": {
+        "n_present": 228,
+        "n_majority": 228,
+        "n_tied": 0,
+        "yes_rate": 0.2193
+      },
+      "cluster2": {
+        "n_present": 285,
+        "n_majority": 265,
+        "n_tied": 20,
+        "yes_rate": 0.3962
+      },
+      "cluster3": {
+        "n_present": 114,
+        "n_majority": 97,
+        "n_tied": 17,
+        "yes_rate": 0.7113
+      }
+    },
+    "mva_ci95": [
+      0.7192,
+      0.8233
+    ],
+    "balanced_accuracy_ci95": [
+      0.6406,
+      0.7546
+    ]
+  }
+}

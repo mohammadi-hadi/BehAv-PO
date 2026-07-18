@@ -307,6 +307,8 @@ regenerated from the EXIST source (see README).
 | Token | Meaning |
 |---|---|
 | `sft_` (no base tag) | SFT on gpt-4o-mini (legacy EN) |
+| `base_41mini_` | Zero-shot ensemble on gpt-4.1-mini (GPT-EN baseline) |
+| `persona_41mini_` | Persona-prompt baseline on gpt-4.1-mini (GPT-EN) |
 | `sft_41mini_` | SFT on gpt-4.1-mini (GPT-EN) |
 | `sft_pure_41mini_` | SFT-pure ablation (no cluster mixing) |
 | `dpo_41mini_` | DPO individual-only on gpt-4.1-mini |
@@ -315,6 +317,7 @@ regenerated from the EXIST source (see README).
 | `grpo_` | GRPO α'=0.2 on gpt-4o-mini (legacy EN) |
 | `grpo_41mini_alpha{00,02,05,10}_` | GRPO α'-sweep on gpt-4.1-mini (convex α = 0, 0.17, 0.33, 0.5) |
 | `gpt41mini_{sft,dpo,grpo_a20}_es_` | GPT-ES suite (`openai_es_suite.py`) |
+| `gpt41mini_base_es_` | Zero-shot ensemble on gpt-4.1-mini (GPT-ES baseline) |
 | `local_qwen3_{base,sft,dpo,grpo_a20}_{en,es}_` | Local Qwen3-8B runs |
 | `local_qwen3_sft_balanced_en_` | Balanced-SFT ablation (Qwen-EN) |
 | `behavioral_fidelity_{en,es}` | Agents vs annotator feature distributions |

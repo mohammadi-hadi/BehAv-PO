@@ -43,8 +43,32 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import config  # noqa: E402
 from evaluation.evaluate_local import core_metrics, subset_metrics  # noqa: E402
 
-MAX_WORKERS = 16
-MAX_RETRIES = 3
+MAX_WORKERS = 8
+MAX_RETRIES = 6
+
+# Cluster-describing system prompts for the persona-prompt baseline (no
+# fine-tuning; one base model per cluster with a persona instruction).
+# Neutral keys, ascending YES rate: cluster1 strict -> cluster3 sensitive.
+PERSONA_PROMPTS = {
+    "cluster1": (
+        "You are a strict content annotator who rarely flags content as sexist. "
+        "You only label clear, explicit cases of sexism. "
+        "Classify whether the given tweet contains sexism. "
+        "Respond with exactly YES or NO."
+    ),
+    "cluster2": (
+        "You are a balanced content annotator. "
+        "You label content as sexist when it contains clear or moderately implicit sexism. "
+        "Classify whether the given tweet contains sexism. "
+        "Respond with exactly YES or NO."
+    ),
+    "cluster3": (
+        "You are a sensitive content annotator who is attuned to subtle forms of sexism. "
+        "You flag content as sexist even when the sexism is implicit or borderline. "
+        "Classify whether the given tweet contains sexism. "
+        "Respond with exactly YES or NO."
+    ),
+}
 
 
 def ts():
@@ -115,10 +139,10 @@ def clean_tweet(tweet):
     return tweet.replace("\x00", "")
 
 
-def predict_one(client, model_id, tweet):
+def predict_one(client, model_id, tweet, system_prompt=None):
     """Single YES/NO prediction with retries (3x, exponential backoff)."""
     messages = [
-        {"role": "system", "content": config.SYSTEM_PROMPT},
+        {"role": "system", "content": system_prompt or config.SYSTEM_PROMPT},
         {"role": "user", "content": f"Tweet: {tweet}"},
     ]
     delay = 1.0
@@ -141,13 +165,13 @@ def predict_one(client, model_id, tweet):
             delay *= 2
 
 
-def predict_agent(client, model_id, tweets, agent_key):
+def predict_agent(client, model_id, tweets, agent_key, system_prompt=None):
     """Predict all tweets for one agent, order-aligned with the input list."""
     print(f"{ts()} {agent_key}: {model_id} ({len(tweets)} texts, "
           f"{MAX_WORKERS} workers)", flush=True)
     preds = [None] * len(tweets)
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as ex:
-        futures = {ex.submit(predict_one, client, model_id, t): i
+        futures = {ex.submit(predict_one, client, model_id, t, system_prompt): i
                    for i, t in enumerate(tweets)}
         done = 0
         for fut in as_completed(futures):
@@ -158,14 +182,15 @@ def predict_agent(client, model_id, tweets, agent_key):
     return preds
 
 
-def build_predictions(model_ids, records):
+def build_predictions(model_ids, records, persona=False):
     """Run all 3 agents and assemble prediction records (test-set order)."""
     client = OpenAI(api_key=load_api_key())
     tweets = [clean_tweet(r["tweet"]) for r in records]
 
     agent_preds = {}
     for ck in config.CLUSTER_KEYS:
-        agent_preds[ck] = predict_agent(client, model_ids[ck], tweets, ck)
+        prompt = PERSONA_PROMPTS[ck] if persona else None
+        agent_preds[ck] = predict_agent(client, model_ids[ck], tweets, ck, prompt)
 
     preds = []
     for i, r in enumerate(records):
@@ -197,6 +222,10 @@ def main():
     parser.add_argument("--stage", default=None,
                         help="Stage metadata for the results file "
                              "(default: inferred from --label)")
+    parser.add_argument("--persona", action="store_true",
+                        help="Use the per-cluster persona system prompts "
+                             "(persona-prompt baseline) instead of the "
+                             "shared SYSTEM_PROMPT")
     args = parser.parse_args()
 
     model_ids = load_model_ids(args.model_ids)
@@ -216,7 +245,7 @@ def main():
         with open(pred_path) as f:
             preds = json.load(f)
     else:
-        preds = build_predictions(model_ids, records)
+        preds = build_predictions(model_ids, records, persona=args.persona)
         with open(pred_path, "w") as f:
             json.dump(preds, f, indent=2)
         print(f"{ts()} saved predictions: {pred_path}", flush=True)
