@@ -38,6 +38,8 @@ Team F1-macro on the full test sets:
 
 GPT-EN also has Mars-PO (88.8) and SFT-pure (88.4); Qwen-EN has a label-balanced SFT ablation (83.4). Source: `artifacts/results/*.json`.
 
+**[RESULTS.md](RESULTS.md)** presents every experiment (all tables, sweeps, ablations, fidelity, clustering) in one generated document; per-text agent votes are in `artifacts/predictions/` (text IDs and labels only — no tweet text, per the EXIST usage agreement).
+
 **Key findings**
 
 - **Zero-shot collapse.** Without fine-tuning the three agents are copies: 0.0% disagreement in both Qwen settings (identical YES rates 0.427 EN / 0.461 ES), 3.2% on GPT-EN.
